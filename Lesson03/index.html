@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function checkFreezing(deg) {
+            const freezingTemp = 32;
+            if(deg > freezingTemp) {
+                return deg + " above freezing"
+            } else {
+                return deg + " below freezing"
+            }
+        }
+        console.log(checkFreezing(50));
+        console.log(checkFreezing(20));
+        console.log(checkFreezing(-12));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
